@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MST</title>
+    <link rel="stylesheet" href="./css/reset.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <svg class="header__logo-image" width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+                          <text x="0" y="60" font-family="Arial" font-size="24" fill="#a3e2f0">DreamHome</text>
+            </svg>
+       
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#intro" class="header__link">Company</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Services</a>
+            </li>
+            <li class="header__item">
+              <a href="#order" class="header__link">Consultation</a>
+            </li>
+          </ul>
+          <div class="header__nav-close">
+            <span class="header__nav-close-line"></span>
+            <span class="header__nav-close-line"></span>
+          </div>
+        </nav>
+        <div class="header__burger burger">
+          <span class="burger__line burger__line_first"></span>
+          <span class="burger__line burger__line_second"></span>
+          <span class="burger__line burger__line_third"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="intro" id="intro">
+        <div class="wrapper intro__wrapper">
+          <div class="intro__content"> 
+            <h1 class="intro__title">
+              <span class="intro__title_highlight"> DreamHome </span> is an innovative technology company  
+              focused on transforming ideas <br />
+              into 
+              <span class="intro__title_highlight"> reality </span>
+            </h1>
+            <p class="intro__subtitle">
+              Explore our advantages and our portfolio to see our past projects !
+            </p>
+            <ul class="intro__list">
+              <li class="intro__list-item">innovative construction solutions</li>
+              <li class="intro__list-item">
+                strong emphasis on leveraging advanced technology
+              </li>
+              <li class="intro__list-item">
+                strong relationships with clients and stakeholders
+              </li>
+            </ul>
+            <div class="intro__buttons-box">
+              <a href="#" class="intro__button intro__button_active">
+                order a call
+              </a>
+              <a href="#" class="intro__button">learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order" id="order">
+        <div class="wrapper order__wrapper">
+          <h2 class="order__title">
+            Our <span class="order__title_highlight">Services </span>
+          </h2>
+          <p class="order__text">
+            Look for our working plans!
+          </p>
+          <div class="order__steps-container">
+            <ul class="order__steps-list">
+              <li class="order__steps-item">
+                <img
+                  src="./assets/images/svg/search.svg"
+                  alt="search"
+                  class="order__steps-image"
+                />
+                <p class="order__steps-text">Send us what house you want, mayby you already have plan</p>
+                <img
+                  src="./assets/images/svg/dots.svg"
+                  alt="dots"
+                  class="order__steps-dots"
+                />
+              </li>
+              <li class="order__steps-item">
+                <img
+                  src="./assets/images/svg/percent.svg"
+                  alt="search"
+                  class="order__steps-image"
+                />
+                <p class="order__steps-text">We can say aproximatly what price it will cost</p>
+                <img
+                  src="./assets/images/svg/dots.svg"
+                  alt="dots"
+                  class="order__steps-dots"
+                />
+              </li>
+              <li class="order__steps-item">
+                <img
+                  src="./assets/images/svg/document.svg"
+                  alt="search"
+                  class="order__steps-image"
+                />
+                <p class="order__steps-text">If everything is good, we'll prepare all documents</p>
+                <img
+                  src="./assets/images/svg/dots.svg"
+                  alt="dots"
+                  class="order__steps-dots"
+                />
+              </li>
+              <li class="order__steps-item">
+                <img
+                  src="./assets/images/svg/mail.svg"
+                  alt="search"
+                  class="order__steps-image"
+                />
+                <p class="order__steps-text">If no corrections, sending to you to sign</p>
+                <img
+                  src="./assets/images/svg/dots.svg"
+                  alt="dots"
+                  class="order__steps-dots"
+                />
+              </li>
+              <li class="order__steps-item">
+                <img
+                  src="./assets/images/svg/money.svg"
+                  alt="search"
+                  class="order__steps-image"
+                />
+                <p class="order__steps-text">
+                  Recieve payment and beging to built!
+                </p>
+              </li>
+            </ul>
+          </div>
+          <form class="order__form">
+            <select class="order__form-select">
+              <option value="" disabled selected>Build option</option>
+              <option value="option1">option 1</option>
+              <option value="option2">option 2</option>
+              <option value="option3">option 3</option>
+            </select>
+
+            <input
+              class="order__form-input email"
+              type="text"
+              placeholder="Your e-mail"
+              id="emailInput"
+            />
+
+            <input
+              class="order__form-input name"
+              type="text"
+              placeholder="Full name"
+              id="nameInput"
+            />
+
+            <div class="order__slider-box">
+              <div class="order__slider-show">
+                <p class="order__slider-text">
+                 What % of your house is built already?
+                </p>
+                <p class="order__slider-percent range-value">75 %</p>
+              </div>
+              <div class="order__slider-range">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="86.5"
+                  class="range-input"
+                />
+              </div>
+            </div>
+            <button class="order__button order__button-attach">
+              <img
+                src="./assets/images/svg/attach.svg"
+                alt="attach"
+                class="order__button-image"
+              />
+              <span class="order__button-text"> File </span>
+            </button>
+            <button class="order__button order__button-submit" type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <p class="footer__rights">
+          <span class="footer__rights-company"> © 2025 «DreamHome» </span>
+          
+        </p>
+        <div class="footer__payment-box">
+          <ul class="footer__payment-list">
+            <li class="footer__payment-item">
+              <img
+                src="./assets/images/svg/qiwi.svg"
+                alt="QIWI"
+                class="footer__payment-icon"
+              />
+              <p class="footer__payment-name">Amazon wallet</p>
+            </li>
+            <li class="footer__payment-item">
+              <img
+                src="./assets/images/svg/yandex.svg"
+                alt="QIWI"
+                class="footer__payment-icon"
+              />
+              <p class="footer__payment-name">Yandex Money</p>
+            </li>
+            <li class="footer__payment-item">
+              <img
+                src="./assets/images/svg/web.svg"
+                alt="QIWI"
+                class="footer__payment-icon"
+              />
+              <p class="footer__payment-name">Web Money</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact-box">
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item email-item">
+              <a
+                href="mailto:dreamhome.com"
+                target="_blank"
+                class="footer__contact-link"
+              >
+                <img
+                  src="./assets/images/svg/email.svg"
+                  alt="email"
+                  class="footer__contact-icon"
+                />
+                <p class="footer__contact-email">dreamhome.com</p>
+              </a>
+            </li>
+            <li class="footer__contact-item">
+              <a href="#" class="footer__contact-link">
+                <img
+                  src="./assets/images/svg//b-letter.svg"
+                  alt="email"
+                  class="footer__contact-icon"
+                />
+                <p class="footer__contact-email">VK</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.min.js"></script>
+  </body>
+</html>
